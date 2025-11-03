@@ -1,0 +1,185 @@
+/* Estilo base */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #e6f2ff; /* azul bebê */
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #b3daff;
+  color: #003366;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Botão de menu (mobile) */
+#menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #003366;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(135deg, #b3daff, #e6f2ff);
+  padding: 50px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+.btn-saiba-mais {
+  display: inline-block;
+  background-color: #0059b3;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.btn-saiba-mais:hover {
+  background-color: #004080;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.intro, .info, .apoio, .sobre {
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: #f2f9ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* Ícones de ajuda */
+.apoio ul {
+  list-style: none;
+  padding: 0;
+}
+
+.apoio li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.apoio li i {
+  color: #0059b3;
+  font-size: 1.3rem;
+}
+
+a {
+  color: #0059b3;
+}
+
+/* Rodapé */
+footer {
+  background-color: #b3daff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #003366;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+#contraste-btn {
+  margin-top: 10px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#contraste-btn:hover {
+  background-color: #004080;
+}
+
+/* Acessibilidade: alto contraste */
+body.alto-contraste {
+  background-color: #000;
+  color: #fff;
+}
+
+body.alto-contraste a {
+  color: #00bfff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #b3daff;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  nav.ativo {
+    display: flex;
+  }
+}
