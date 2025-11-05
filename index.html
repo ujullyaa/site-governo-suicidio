@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-…"
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -22,24 +20,21 @@
       <a href="#campanhas">Campanhas</a>
       <a href="#contato">Contato</a>
     </nav>
-    <button id="menu-btn" aria-label="Abrir menu">☰</button>
+    <button id="menu-btn">☰</button>
   </header>
 
   <main>
     <!-- Início -->
     <section id="inicio" class="intro">
-      <div class="banner">
-        <h2>Falar é a melhor solução 💙</h2>
-        <p>Esta campanha é uma iniciativa do Governo do Estado de Santa Catarina, com apoio da Secretaria da Saúde e da UFSC, para promover a conscientização sobre a prevenção do suicídio.</p>
-        <p>Se precisar conversar, ligue <strong>188</strong> — atendimento gratuito e 24h pelo CVV.</p>
-        <a href="#sinais" class="btn-saiba-mais">Saiba mais</a>
-      </div>
+      <h2>Falar é a melhor solução 💙</h2>
+      <p>Esta campanha é uma iniciativa do Governo do Estado de Santa Catarina, com apoio da Secretaria da Saúde e da UFSC, para promover a conscientização sobre a prevenção do suicídio.</p>
+      <p>Se precisar conversar, ligue <strong>188</strong> — atendimento gratuito e 24h pelo CVV.</p>
+      <a href="#sinais" class="btn-saiba-mais">Saiba mais</a>
     </section>
 
     <!-- Sinais de Alerta -->
     <section id="sinais" class="info">
       <h2>Sinais de Alerta</h2>
-      <p>O comportamento suicida pode estar associado a diferentes fatores — biológicos, psicológicos e sociais.</p>
       <ul class="lista-sinais">
         <li><i class="fa-solid fa-comment-slash"></i> Falar constantemente sobre morte ou desesperança</li>
         <li><i class="fa-solid fa-user-slash"></i> Isolamento de amigos e familiares</li>
@@ -51,24 +46,34 @@
     <!-- Dados Globais -->
     <section id="dados" class="estatisticas">
       <h2>Dados e Estatísticas Globais</h2>
-      <p>Segundo dados da OMS, mais de <strong>720.000 pessoas morrem por suicídio a cada ano no mundo</strong>. :contentReference[oaicite:1]{index=1}</p>
-      <p>Em 2021, estimou-se que <strong>727.000 mortes</strong> foram por suicídio. :contentReference[oaicite:2]{index=2}</p>
-      <p>Cerca de <strong>1 em cada 100 mortes</strong> no mundo são por suicídio. :contentReference[oaicite:3]{index=3}</p>
-      <p>Observou-se que <strong>73% dessas mortes ocorrem em países de baixa e média renda</strong>. :contentReference[oaicite:4]{index=4}</p>
-      <div class="dados-grafico">
-        <ul>
-          <li><strong>2000-2019:</strong> a taxa global padronizada de suicídio caiu cerca de 29% (espécie de “taxa de mortalidade ajustada”). :contentReference[oaicite:5]{index=5}</li>
-          <li><strong>Desde 2019 na Região das Américas:</strong> houve aumento de 28% na taxa padronizada de suicídios. :contentReference[oaicite:6]{index=6}</li>
-          <li><strong>Regiões com maiores taxas em 2019:</strong> Europa (~12,8 por 100.000), África (~11,2 por 100.000), Sudeste Asiático (~10,2 por 100.000). :contentReference[oaicite:7]{index=7}</li>
-        </ul>
-      </div>
-      <p>Esses dados reforçam que o suicídio é uma questão de saúde pública global, exigindo resposta integrada, inequívoca e baseada em evidências.</p>
+      <p>
+        Segundo a <strong>Organização Mundial da Saúde (OMS)</strong>, mais de
+        <strong>700 mil pessoas morrem por suicídio todos os anos</strong> — uma morte a cada 40 segundos.
+        O suicídio representa <strong>1 em cada 100 mortes no mundo</strong>.
+      </p>
+      <p>
+        Entre 2000 e 2019, a taxa global de suicídio caiu cerca de <strong>29%</strong>,
+        passando de 14 para 10,5 mortes por 100 mil habitantes.
+      </p>
+
+      <h3>Evolução global das taxas de suicídio (2000–2019)</h3>
+      <canvas id="grafico-suicidio" width="400" height="200"></canvas>
+
+      <h3>Comparativo entre regiões do mundo (2019)</h3>
+      <canvas id="grafico-regioes" width="400" height="200"></canvas>
+
+      <p class="fonte">
+        Fonte: World Health Organization. <em>World Health Statistics 2023</em>.<br>
+        Disponível em:
+        <a href="https://cdn.who.int/media/docs/default-source/gho-documents/world-health-statistic-reports/2023/world-health-statistics-2023_20230519_.pdf" target="_blank">
+          cdn.who.int
+        </a>
+      </p>
     </section>
 
     <!-- Prevenção -->
     <section id="prevencao" class="apoio">
       <h2>Como Ajudar e Prevenir</h2>
-      <p>A prevenção começa com a escuta empática e o acolhimento. Falar sobre o tema com respeito pode salvar vidas.</p>
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-hand-holding-heart"></i>
@@ -78,17 +83,17 @@
         <div class="card">
           <i class="fa-solid fa-user-md"></i>
           <h3>Busque ajuda profissional</h3>
-          <p>Serviços de saúde mental estão disponíveis gratuitamente pelo SUS em muitos lugares.</p>
+          <p>Serviços de saúde mental estão disponíveis gratuitamente pelo SUS e outras redes públicas.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-phone"></i>
           <h3>Ligue 188</h3>
-          <p>Em muitos países, linhas de apoio emergencial funcionam 24h gratuitamente.</p>
+          <p>O CVV oferece escuta gratuita, sigilosa e 24 horas por dia.</p>
         </div>
       </div>
     </section>
 
-    <!-- Campanhas e Notícias -->
+    <!-- Campanhas -->
     <section id="campanhas" class="campanhas">
       <h2>Campanhas e Notícias</h2>
       <div class="cards">
@@ -102,7 +107,7 @@
         <div class="card">
           <img src="imagens/saudemental.jpg" alt="Saúde Mental nas Escolas">
           <h3>Saúde Mental nas Escolas</h3>
-          <p>Programa estadual que leva informação e apoio psicológico a estudantes e professores.</p>
+          <p>Programa que leva informação e apoio psicológico a estudantes e professores.</p>
         </div>
       </div>
     </section>
@@ -119,14 +124,34 @@
       </form>
     </section>
 
+    <!-- Referências -->
+    <section id="referencias" class="referencias">
+      <h2>Referências</h2>
+      <ul>
+        <li>World Health Organization (2023). <em>World Health Statistics Report 2023</em>.
+          Disponível em:
+          <a href="https://cdn.who.int/media/docs/default-source/gho-documents/world-health-statistic-reports/2023/world-health-statistics-2023_20230519_.pdf" target="_blank">
+          cdn.who.int</a>
+        </li>
+        <li>World Health Organization (2021). <em>Suicide Worldwide in 2019: Global Health Estimates</em>.
+          <a href="https://www.who.int/publications/i/item/9789240026643" target="_blank">
+          who.int</a>
+        </li>
+        <li>Pan American Health Organization (PAHO). <em>One in 100 deaths is by suicide</em>.
+          <a href="https://www.paho.org/en/one-100-deaths-suicide" target="_blank">
+          paho.org</a>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 Governo do Estado de Santa Catarina | Secretaria da Saúde</p>
     <p>Desenvolvido por alunos da Universidade Federal de Santa Catarina (UFSC)</p>
-    <button id="contraste-btn">Alto Contraste</button>
+    <button id="modo-escuro-btn">🌙 Modo Escuro</button>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
