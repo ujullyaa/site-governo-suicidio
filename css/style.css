@@ -1,319 +1,240 @@
-/* ===========================
+/* =====================
    ESTILO GERAL
-=========================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+===================== */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #e8f3ff;
-  color: #1c2a39;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background-color: #e7f1ff;
+  color: #002b5b;
   line-height: 1.6;
-  transition: background-color 0.4s, color 0.4s;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* ===========================
-   CABEÇALHO E MENU
-=========================== */
-header {
-  background-color: #007acc;
-  color: white;
+h1, h2, h3 {
   text-align: center;
-  padding: 20px 10px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  color: #003366;
+}
+
+a {
+  color: #003366;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   CABEÇALHO E MENU
+===================== */
+header {
+  background-color: #b3d8ff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 nav {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #cce6ff;
+  font-weight: 600;
 }
 
 #menu-btn {
   display: none;
   background: none;
   border: none;
-  color: white;
-  font-size: 1.8rem;
-  cursor: pointer;
+  font-size: 24px;
 }
 
-/* ===========================
+/* =====================
    SEÇÕES
-=========================== */
+===================== */
 section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-section h2 {
-  color: #003366;
-  margin-bottom: 20px;
-  font-size: 1.7rem;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .intro {
-  background: linear-gradient(to bottom, #b3e0ff, #e6f5ff);
-}
-
-.intro p {
-  max-width: 700px;
-  margin: 10px auto;
+  text-align: center;
+  background-color: #d6ebff;
+  padding: 60px 20px;
+  border-radius: 20px;
 }
 
 .btn-saiba-mais {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 22px;
-  background-color: #007acc;
+  background-color: #0077ff;
   color: white;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: background-color 0.3s;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 .btn-saiba-mais:hover {
-  background-color: #005fa3;
-}
-
-/* ===========================
-   SINAIS DE ALERTA
-=========================== */
-.lista-sinais {
-  list-style: none;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
+  background-color: #005fcc;
 }
 
 .lista-sinais li {
   margin: 10px 0;
-  font-size: 1.1rem;
+  list-style: none;
 }
 
 .lista-sinais i {
-  color: #005fa3;
-  margin-right: 10px;
+  color: #0077ff;
+  margin-right: 8px;
 }
 
-/* ===========================
-   DADOS E ESTATÍSTICAS
-=========================== */
-.estatisticas h3 {
-  text-align: center;
-  color: #003366;
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
-
-canvas {
-  display: block;
-  margin: 0 auto 40px;
-  max-width: 700px;
-}
-
-.fonte {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 20px;
-}
-
-/* ===========================
-   CARTÕES
-=========================== */
+/* =====================
+   CARDS
+===================== */
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
+  margin-top: 30px;
 }
 
 .card {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   padding: 20px;
-  width: 280px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .card i {
-  font-size: 2rem;
-  color: #007acc;
+  font-size: 40px;
+  color: #0077ff;
   margin-bottom: 10px;
 }
 
-.card h3 {
-  margin-top: 10px;
-  color: #003366;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #333;
-}
-
-/* ===========================
-   FORMULÁRIO
-=========================== */
+/* =====================
+   FORMULÁRIO DE CONTATO
+===================== */
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  max-width: 400px;
-  margin: 0 auto;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
 }
 
-input,
-textarea {
-  width: 100%;
+form input, form textarea {
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 8px;
+  border: 1px solid #b3d8ff;
   font-size: 1rem;
 }
 
 form button {
-  background-color: #007acc;
+  background-color: #0077ff;
   color: white;
   border: none;
-  padding: 10px 22px;
-  border-radius: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 form button:hover {
-  background-color: #005fa3;
+  background-color: #005fcc;
 }
 
-/* ===========================
+/* =====================
+   REFERÊNCIAS
+===================== */
+.referencias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.referencias li {
+  margin: 10px 0;
+}
+
+/* =====================
    RODAPÉ
-=========================== */
+===================== */
 footer {
-  background-color: #007acc;
-  color: white;
+  background-color: #b3d8ff;
   text-align: center;
-  padding: 25px 10px;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  position: relative;
 }
 
 footer button {
-  background-color: #005fa3;
-  color: white;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #0077ff;
   border: none;
-  padding: 8px 18px;
-  border-radius: 20px;
-  margin-top: 10px;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 footer button:hover {
-  background-color: #003366;
+  background-color: #005fcc;
 }
 
-/* ===========================
+/* =====================
    MODO ESCURO
-=========================== */
+===================== */
 body.modo-escuro {
-  background-color: #0e1a24;
-  color: #f4f4f4;
+  background-color: #0d1b2a;
+  color: #e0eaff;
 }
 
-body.modo-escuro header {
-  background-color: #162636;
-}
-
-body.modo-escuro nav a {
-  color: #cfe8ff;
-}
-
-body.modo-escuro section {
-  background-color: #12202d;
-}
-
+body.modo-escuro header,
 body.modo-escuro footer {
-  background-color: #162636;
+  background-color: #142d4c;
 }
 
 body.modo-escuro .card {
-  background-color: #1d2e40;
-  color: #fff;
+  background-color: #1b263b;
+  color: #e0eaff;
 }
 
-body.modo-escuro .btn-saiba-mais,
-body.modo-escuro form button {
-  background-color: #3399ff;
+body.modo-escuro a {
+  color: #88c9ff;
 }
 
-body.modo-escuro .btn-saiba-mais:hover,
-body.modo-escuro form button:hover {
-  background-color: #007acc;
-}
-
-/* ===========================
-   RESPONSIVIDADE
-=========================== */
-@media (max-width: 768px) {
-  #menu {
-    display: none;
-    flex-direction: column;
-    background-color: #005fa3;
-    padding: 10px;
-  }
-
-  #menu.ativo {
-    display: flex;
-  }
-
-  #menu-btn {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+body.modo-escuro .btn-saiba-mais {
+  background-color: #88c9ff;
+  color: #0d1b2a;
 }
