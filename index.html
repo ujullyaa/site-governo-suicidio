@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campanha de Prevenção ao Suicídio | Governo do Estado</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-…"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -13,9 +17,9 @@
     <nav id="menu">
       <a href="#inicio">Início</a>
       <a href="#sinais">Sinais</a>
+      <a href="#dados">Dados Globais</a>
       <a href="#prevencao">Prevenção</a>
       <a href="#campanhas">Campanhas</a>
-      <a href="#depoimentos">Depoimentos</a>
       <a href="#contato">Contato</a>
     </nav>
     <button id="menu-btn" aria-label="Abrir menu">☰</button>
@@ -26,13 +30,13 @@
     <section id="inicio" class="intro">
       <div class="banner">
         <h2>Falar é a melhor solução 💙</h2>
-        <p>Promovida pelo Governo do Estado de Santa Catarina, com apoio da Secretaria da Saúde e da UFSC, esta campanha visa conscientizar sobre a importância do cuidado com a saúde mental.</p>
+        <p>Esta campanha é uma iniciativa do Governo do Estado de Santa Catarina, com apoio da Secretaria da Saúde e da UFSC, para promover a conscientização sobre a prevenção do suicídio.</p>
         <p>Se precisar conversar, ligue <strong>188</strong> — atendimento gratuito e 24h pelo CVV.</p>
         <a href="#sinais" class="btn-saiba-mais">Saiba mais</a>
       </div>
     </section>
 
-    <!-- Sinais -->
+    <!-- Sinais de Alerta -->
     <section id="sinais" class="info">
       <h2>Sinais de Alerta</h2>
       <p>O comportamento suicida pode estar associado a diferentes fatores — biológicos, psicológicos e sociais.</p>
@@ -42,6 +46,23 @@
         <li><i class="fa-solid fa-moon"></i> Mudanças drásticas de sono e apetite</li>
         <li><i class="fa-solid fa-heart-crack"></i> Sentimentos intensos de culpa, tristeza ou rejeição</li>
       </ul>
+    </section>
+
+    <!-- Dados Globais -->
+    <section id="dados" class="estatisticas">
+      <h2>Dados e Estatísticas Globais</h2>
+      <p>Segundo dados da OMS, mais de <strong>720.000 pessoas morrem por suicídio a cada ano no mundo</strong>. :contentReference[oaicite:1]{index=1}</p>
+      <p>Em 2021, estimou-se que <strong>727.000 mortes</strong> foram por suicídio. :contentReference[oaicite:2]{index=2}</p>
+      <p>Cerca de <strong>1 em cada 100 mortes</strong> no mundo são por suicídio. :contentReference[oaicite:3]{index=3}</p>
+      <p>Observou-se que <strong>73% dessas mortes ocorrem em países de baixa e média renda</strong>. :contentReference[oaicite:4]{index=4}</p>
+      <div class="dados-grafico">
+        <ul>
+          <li><strong>2000-2019:</strong> a taxa global padronizada de suicídio caiu cerca de 29% (espécie de “taxa de mortalidade ajustada”). :contentReference[oaicite:5]{index=5}</li>
+          <li><strong>Desde 2019 na Região das Américas:</strong> houve aumento de 28% na taxa padronizada de suicídios. :contentReference[oaicite:6]{index=6}</li>
+          <li><strong>Regiões com maiores taxas em 2019:</strong> Europa (~12,8 por 100.000), África (~11,2 por 100.000), Sudeste Asiático (~10,2 por 100.000). :contentReference[oaicite:7]{index=7}</li>
+        </ul>
+      </div>
+      <p>Esses dados reforçam que o suicídio é uma questão de saúde pública global, exigindo resposta integrada, inequívoca e baseada em evidências.</p>
     </section>
 
     <!-- Prevenção -->
@@ -57,24 +78,26 @@
         <div class="card">
           <i class="fa-solid fa-user-md"></i>
           <h3>Busque ajuda profissional</h3>
-          <p>Serviços de saúde mental estão disponíveis gratuitamente pelo SUS.</p>
+          <p>Serviços de saúde mental estão disponíveis gratuitamente pelo SUS em muitos lugares.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-phone"></i>
           <h3>Ligue 188</h3>
-          <p>O CVV oferece escuta gratuita, sigilosa e 24 horas por dia.</p>
+          <p>Em muitos países, linhas de apoio emergencial funcionam 24h gratuitamente.</p>
         </div>
       </div>
     </section>
 
-    <!-- Campanhas -->
+    <!-- Campanhas e Notícias -->
     <section id="campanhas" class="campanhas">
       <h2>Campanhas e Notícias</h2>
       <div class="cards">
         <div class="card">
-          <img src="imagens/setembro.jpg" alt="Setembro Amarelo">
+          <a href="https://www.setembroamarelo.org.br/" target="_blank">
+            <img src="imagens/setembro.jpg" alt="Setembro Amarelo">
+          </a>
           <h3>Setembro Amarelo</h3>
-          <p>Movimento nacional de conscientização sobre a importância de falar sobre o suicídio.</p>
+          <p>Movimento nacional de conscientização sobre prevenção do suicídio.</p>
         </div>
         <div class="card">
           <img src="imagens/saudemental.jpg" alt="Saúde Mental nas Escolas">
@@ -95,6 +118,7 @@
         <button type="submit">Enviar</button>
       </form>
     </section>
+
   </main>
 
   <footer>
