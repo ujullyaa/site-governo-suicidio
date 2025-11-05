@@ -5,55 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campanha de Prevenção ao Suicídio | Governo do Estado</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Font Awesome para ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-SomeHash" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>Campanha de Prevenção ao Suicídio</h1>
     <nav id="menu">
       <a href="#inicio">Início</a>
-      <a href="#sinais">Sinais e Causas</a>
-      <a href="#ajuda">Onde Buscar Ajuda</a>
-      <a href="#sobre">Sobre</a>
+      <a href="#sinais">Sinais</a>
+      <a href="#prevencao">Prevenção</a>
+      <a href="#campanhas">Campanhas</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
     </nav>
     <button id="menu-btn" aria-label="Abrir menu">☰</button>
   </header>
 
   <main>
-    <!-- Banner com botão -->
+    <!-- Início -->
     <section id="inicio" class="intro">
       <div class="banner">
-        <h2>Falar é a melhor solução 💛</h2>
-        <p>Esta campanha é uma iniciativa do Governo do Estado de Santa Catarina, com apoio da Secretaria de Saúde e da UFSC, para promover a conscientização sobre a prevenção do suicídio.</p>
-        <p>Se você precisa de ajuda, ligue <strong>188</strong> — o CVV está disponível 24 horas por dia.</p>
+        <h2>Falar é a melhor solução 💙</h2>
+        <p>Promovida pelo Governo do Estado de Santa Catarina, com apoio da Secretaria da Saúde e da UFSC, esta campanha visa conscientizar sobre a importância do cuidado com a saúde mental.</p>
+        <p>Se precisar conversar, ligue <strong>188</strong> — atendimento gratuito e 24h pelo CVV.</p>
         <a href="#sinais" class="btn-saiba-mais">Saiba mais</a>
       </div>
     </section>
 
-    <!-- Sinais e causas -->
+    <!-- Sinais -->
     <section id="sinais" class="info">
-      <h2>Sinais e Causas</h2>
-      <p>O comportamento suicida pode estar associado a múltiplos fatores — biológicos, psicológicos e sociais. Mudanças bruscas de humor, isolamento e fala sobre morte podem ser sinais de alerta.</p>
-      <p>É fundamental observar, ouvir e acolher com empatia. A ajuda profissional é essencial.</p>
-    </section>
-
-    <!-- Onde buscar ajuda -->
-    <section id="ajuda" class="apoio">
-      <h2>Onde Buscar Ajuda</h2>
-      <ul>
-        <li><i class="fas fa-phone"></i> <strong>CVV</strong> – ligue 188 (atendimento 24h e gratuito)</li>
-        <li><i class="fas fa-hospital"></i> <strong>CAPS</strong> – Centros de Atenção Psicossocial (SUS)</li>
-        <li><i class="fas fa-clinic-medical"></i> <strong>Unidades de Saúde</strong> – atendimento psicológico gratuito</li>
-        <li><i class="fas fa-globe"></i> <a href="https://cvv.org.br" target="_blank">cvv.org.br</a></li>
+      <h2>Sinais de Alerta</h2>
+      <p>O comportamento suicida pode estar associado a diferentes fatores — biológicos, psicológicos e sociais.</p>
+      <ul class="lista-sinais">
+        <li><i class="fa-solid fa-comment-slash"></i> Falar constantemente sobre morte ou desesperança</li>
+        <li><i class="fa-solid fa-user-slash"></i> Isolamento de amigos e familiares</li>
+        <li><i class="fa-solid fa-moon"></i> Mudanças drásticas de sono e apetite</li>
+        <li><i class="fa-solid fa-heart-crack"></i> Sentimentos intensos de culpa, tristeza ou rejeição</li>
       </ul>
     </section>
 
-    <!-- Sobre o projeto -->
-    <section id="sobre" class="sobre">
-      <h2>Sobre o Projeto</h2>
-      <p>Desenvolvido por alunos da Universidade Federal de Santa Catarina (UFSC) como parte do Laboratório de Biologia, este site tem como objetivo apoiar a divulgação de informações confiáveis sobre prevenção do suicídio.</p>
-      <p>Fontes: Ministério da Saúde, CVV e Organização Pan-Americana da Saúde (OPAS).</p>
+    <!-- Prevenção -->
+    <section id="prevencao" class="apoio">
+      <h2>Como Ajudar e Prevenir</h2>
+      <p>A prevenção começa com a escuta empática e o acolhimento. Falar sobre o tema com respeito pode salvar vidas.</p>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <h3>Escute com empatia</h3>
+          <p>Ouvir sem julgar é um passo essencial para ajudar alguém em sofrimento.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-user-md"></i>
+          <h3>Busque ajuda profissional</h3>
+          <p>Serviços de saúde mental estão disponíveis gratuitamente pelo SUS.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Ligue 188</h3>
+          <p>O CVV oferece escuta gratuita, sigilosa e 24 horas por dia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campanhas -->
+    <section id="campanhas" class="campanhas">
+      <h2>Campanhas e Notícias</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="imagens/setembro.jpg" alt="Setembro Amarelo">
+          <h3>Setembro Amarelo</h3>
+          <p>Movimento nacional de conscientização sobre a importância de falar sobre o suicídio.</p>
+        </div>
+        <div class="card">
+          <img src="imagens/saudemental.jpg" alt="Saúde Mental nas Escolas">
+          <h3>Saúde Mental nas Escolas</h3>
+          <p>Programa estadual que leva informação e apoio psicológico a estudantes e professores.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos">
+      <h2>Histórias que Inspiram</h2>
+      <div class="depoimento">
+        <p>“Eu achava que não tinha saída, até que encontrei alguém disposto a me ouvir. Hoje eu valorizo cada conversa.”</p>
+        <span>– Anônimo, 22 anos</span>
+      </div>
+      <div class="depoimento">
+        <p>“Falar foi o primeiro passo. O apoio que recebi fez toda diferença na minha recuperação.”</p>
+        <span>– Participante do CVV</span>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+      <h2>Entre em Contato</h2>
+      <p>Envie uma mensagem ou procure apoio psicológico gratuito.</p>
+      <form id="contato-form">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
