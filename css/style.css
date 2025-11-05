@@ -125,10 +125,17 @@ section h2 {
 /* ===========================
    DADOS E ESTATÍSTICAS
 =========================== */
+.estatisticas h3 {
+  text-align: center;
+  color: #003366;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
 canvas {
-  max-width: 700px;
-  margin: 40px auto;
   display: block;
+  margin: 0 auto 40px;
+  max-width: 700px;
 }
 
 .fonte {
@@ -139,7 +146,7 @@ canvas {
 }
 
 /* ===========================
-   CARTÕES (PREVENÇÃO, CAMPANHAS)
+   CARTÕES
 =========================== */
 .cards {
   display: flex;
@@ -184,7 +191,7 @@ canvas {
 }
 
 /* ===========================
-   CONTATO
+   FORMULÁRIO
 =========================== */
 form {
   display: flex;

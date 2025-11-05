@@ -62,6 +62,12 @@
       <h3>Comparativo entre regiões do mundo (2019)</h3>
       <canvas id="grafico-regioes" width="400" height="200"></canvas>
 
+      <h3>Comparativo entre gêneros (2019)</h3>
+      <canvas id="grafico-genero" width="400" height="200"></canvas>
+
+      <h3>Mapa mundial das taxas de suicídio (2019)</h3>
+      <canvas id="grafico-mapa" width="400" height="250"></canvas>
+
       <p class="fonte">
         Fonte: World Health Organization. <em>World Health Statistics 2023</em>.<br>
         Disponível em:
@@ -128,19 +134,12 @@
     <section id="referencias" class="referencias">
       <h2>Referências</h2>
       <ul>
-        <li>World Health Organization (2023). <em>World Health Statistics Report 2023</em>.
-          Disponível em:
-          <a href="https://cdn.who.int/media/docs/default-source/gho-documents/world-health-statistic-reports/2023/world-health-statistics-2023_20230519_.pdf" target="_blank">
-          cdn.who.int</a>
-        </li>
-        <li>World Health Organization (2021). <em>Suicide Worldwide in 2019: Global Health Estimates</em>.
-          <a href="https://www.who.int/publications/i/item/9789240026643" target="_blank">
-          who.int</a>
-        </li>
-        <li>Pan American Health Organization (PAHO). <em>One in 100 deaths is by suicide</em>.
-          <a href="https://www.paho.org/en/one-100-deaths-suicide" target="_blank">
-          paho.org</a>
-        </li>
+        <li>World Health Organization (2023). <em>World Health Statistics Report 2023</em>. 
+          <a href="https://cdn.who.int/media/docs/default-source/gho-documents/world-health-statistic-reports/2023/world-health-statistics-2023_20230519_.pdf" target="_blank">WHO Report</a></li>
+        <li>World Health Organization (2021). <em>Suicide Worldwide in 2019: Global Health Estimates</em>. 
+          <a href="https://www.who.int/publications/i/item/9789240026643" target="_blank">who.int</a></li>
+        <li>Pan American Health Organization (PAHO). <em>One in 100 deaths is by suicide</em>. 
+          <a href="https://www.paho.org/en/one-100-deaths-suicide" target="_blank">paho.org</a></li>
       </ul>
     </section>
   </main>
@@ -152,6 +151,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo@3.9.0/build/index.umd.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
