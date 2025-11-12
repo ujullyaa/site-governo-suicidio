@@ -1,6 +1,4 @@
-/* =====================
-   ESTILO GERAL
-===================== */
+/* ===================== ESTILO GERAL ===================== */
 body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
@@ -10,231 +8,156 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-h1, h2, h3 {
+h1,h2,h3 {
   text-align: center;
   color: #003366;
+  margin-bottom: 20px;
 }
 
 a {
   color: #003366;
   text-decoration: none;
 }
+a:hover { text-decoration: underline; }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* =====================
-   CABEÇALHO E MENU
-===================== */
+/* ===================== CABEÇALHO E MENU ===================== */
 header {
-  background-color: #b3d8ff;
+  background: #b3d8ff;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+header h1 { font-size: 1.5rem; margin:0; }
+nav { display:flex; flex-wrap:wrap; gap:15px; }
+nav a { font-weight:600; }
+#menu-btn { display:none; background:none; border:none; font-size:24px; }
 
-header h1 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-nav a {
-  font-weight: 600;
-}
-
-#menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-}
-
-/* =====================
-   SEÇÕES
-===================== */
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
+/* ===================== SEÇÕES ===================== */
+section { padding:60px 20px; max-width:1000px; margin:auto; }
 .intro {
-  text-align: center;
-  background-color: #d6ebff;
-  padding: 60px 20px;
-  border-radius: 20px;
+  text-align:center;
+  background:#d6ebff;
+  padding:80px 20px;
+  border-radius:20px;
 }
-
 .btn-saiba-mais {
-  display: inline-block;
-  background-color: #0077ff;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-weight: 600;
-  margin-top: 20px;
+  display:inline-block;
+  background:#0077ff;
+  color:#fff;
+  padding:12px 20px;
+  border-radius:10px;
+  font-weight:600;
+  margin-top:20px;
 }
+.btn-saiba-mais:hover { background:#005fcc; }
 
-.btn-saiba-mais:hover {
-  background-color: #005fcc;
-}
+.lista-sinais li { margin:10px 0; list-style:none; }
+.lista-sinais i { color:#0077ff; margin-right:8px; }
 
-.lista-sinais li {
-  margin: 10px 0;
-  list-style: none;
-}
-
-.lista-sinais i {
-  color: #0077ff;
-  margin-right: 8px;
-}
-
-/* =====================
-   CARDS
-===================== */
+/* ===================== CARDS ===================== */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  margin-top:40px;
 }
-
 .card {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:transform 0.3s;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
+.card:hover { transform:translateY(-5px); }
 .card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  width:100%;
+  border-radius:10px;
+  margin-bottom:10px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+.card img:hover { transform:scale(1.05); box-shadow:0 4px 15px rgba(0,0,0,0.2); }
+.card i { font-size:40px; color:#0077ff; margin-bottom:10px; }
 
-.card img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+/* ===================== GRÁFICOS ===================== */
+.graficos {
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+  margin-top:40px;
+  align-items:center;
+}
+.grafico {
+  width:100%;
+  max-width:800px;
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.card i {
-  font-size: 40px;
-  color: #0077ff;
-  margin-bottom: 10px;
-}
-
-/* =====================
-   FORMULÁRIO DE CONTATO
-===================== */
+/* ===================== FORMULÁRIO ===================== */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  max-width:500px;
+  margin:auto;
 }
-
 form input, form textarea {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #b3d8ff;
-  font-size: 1rem;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #b3d8ff;
+  font-size:1rem;
 }
-
 form button {
-  background-color: #0077ff;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
+  background:#0077ff;
+  color:#fff;
+  border:none;
+  padding:12px;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
 }
+form button:hover { background:#005fcc; }
 
-form button:hover {
-  background-color: #005fcc;
-}
+/* ===================== REFERÊNCIAS ===================== */
+.referencias ul { list-style:none; padding:0; }
+.referencias li { margin:10px 0; }
 
-/* =====================
-   REFERÊNCIAS
-===================== */
-.referencias ul {
-  list-style: none;
-  padding: 0;
-}
-
-.referencias li {
-  margin: 10px 0;
-}
-
-/* =====================
-   RODAPÉ
-===================== */
+/* ===================== RODAPÉ ===================== */
 footer {
-  background-color: #b3d8ff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-  font-size: 0.9rem;
-  position: relative;
+  background:#b3d8ff;
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+  font-size:0.9rem;
+  position:relative;
 }
-
 footer button {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  background-color: #0077ff;
-  border: none;
-  color: white;
-  padding: 10px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  background:#0077ff;
+  border:none;
+  color:#fff;
+  padding:10px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
 }
+footer button:hover { background:#005fcc; }
 
-footer button:hover {
-  background-color: #005fcc;
-}
-
-/* =====================
-   MODO ESCURO
-===================== */
+/* ===================== MODO ESCURO ===================== */
 body.modo-escuro {
-  background-color: #0d1b2a;
-  color: #e0eaff;
+  background:#0d1b2a;
+  color:#e0eaff;
 }
-
 body.modo-escuro header,
-body.modo-escuro footer {
-  background-color: #142d4c;
-}
-
-body.modo-escuro .card {
-  background-color: #1b263b;
-  color: #e0eaff;
-}
-
-body.modo-escuro a {
-  color: #88c9ff;
-}
-
-body.modo-escuro .btn-saiba-mais {
-  background-color: #88c9ff;
-  color: #0d1b2a;
-}
+body.modo-escuro footer { background:#142d4c; }
+body.modo-escuro .card,
+body.modo-escuro .grafico { background:#1b263b; color:#e0eaff; }
+body.modo-escuro a { color:#88c9ff; }
+body.modo-escuro .btn-saiba-mais { background:#88c9ff; color:#0d1b2a; }

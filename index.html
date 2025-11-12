@@ -15,8 +15,9 @@
     <nav id="menu">
       <a href="#inicio">Início</a>
       <a href="#sinais">Sinais</a>
-      <a href="#dados">Dados Globais</a>
+      <a href="#dados">Dados</a>
       <a href="#prevencao">Prevenção</a>
+      <a href="#metas">Metas Globais</a>
       <a href="#campanhas">Campanhas</a>
       <a href="#contato">Contato</a>
     </nav>
@@ -43,37 +44,61 @@
       </ul>
     </section>
 
-    <!-- Dados Globais -->
+    <!-- Dados -->
     <section id="dados" class="estatisticas">
-      <h2>Dados e Estatísticas Globais</h2>
+      <h2>Panorama Mundial e Nacional do Suicídio</h2>
+
       <p>
-        Segundo a <strong>Organização Mundial da Saúde (OMS)</strong>, mais de
-        <strong>700 mil pessoas morrem por suicídio todos os anos</strong> — uma morte a cada 40 segundos.
-        O suicídio representa <strong>1 em cada 100 mortes no mundo</strong>.
-      </p>
-      <p>
-        Entre 2000 e 2019, a taxa global de suicídio caiu cerca de <strong>29%</strong>,
-        passando de 14 para 10,5 mortes por 100 mil habitantes.
+        Segundo a <strong>Organização Mundial da Saúde (OMS, 2025)</strong>, 
+        cerca de <strong>727 mil pessoas morreram por suicídio em 2021</strong> — 
+        o que representa <strong>1,1% de todas as mortes globais</strong>. 
+        A taxa média mundial foi de <strong>8,9 mortes por 100 mil habitantes</strong>.
       </p>
 
-      <h3>Evolução global das taxas de suicídio (2000–2019)</h3>
+      <p>
+        A taxa entre homens (<strong>12,3</strong>) é mais que o dobro da observada entre mulheres (<strong>5,6</strong>).
+        Mais da metade das mortes (56%) ocorreram antes dos 50 anos de idade.
+        O suicídio foi a <strong>terceira principal causa de morte entre jovens de 15 a 29 anos</strong>.
+      </p>
+
+      <p>
+        Entre as regiões, as taxas mais altas foram registradas na 
+        <strong>África (11,5)</strong>, <strong>Europa (10,1)</strong>,
+        <strong>Sudeste Asiático (10,1)</strong> e <strong>Américas (9,2)</strong>,
+        enquanto o <strong>Mediterrâneo Oriental</strong> teve as menores taxas (<strong>4,0</strong>).
+      </p>
+
+      <h3>Evolução global das taxas (2000–2021)</h3>
       <canvas id="grafico-suicidio"></canvas>
 
-      <h3>Comparativo entre regiões do mundo (2019)</h3>
+      <h3>Comparativo entre regiões do mundo (2021)</h3>
       <canvas id="grafico-regioes"></canvas>
 
-      <h3>Comparativo entre gêneros (2019)</h3>
+      <h3>Comparativo entre gêneros (2021)</h3>
       <canvas id="grafico-genero"></canvas>
 
-      <h3>Mapa mundial das taxas de suicídio (2019)</h3>
-      <canvas id="grafico-mapa"></canvas>
+      <h3>Panorama Brasileiro</h3>
+      <p>
+        O <strong>Boletim Epidemiológico do Ministério da Saúde (2024)</strong> 
+        registrou <strong>15.507 suicídios no Brasil em 2021</strong>,
+        sendo <strong>77,8% entre homens</strong>.
+        Isso equivale a uma <strong>taxa nacional de 7,5 por 100 mil habitantes</strong>,
+        com aumento de <strong>42% desde 2010</strong>.
+      </p>
+
+      <p>
+        As maiores taxas estaduais ocorreram em 
+        <strong>Rio Grande do Sul (12,37)</strong>, <strong>Piauí (11,83)</strong>,
+        <strong>Mato Grosso do Sul (11,76)</strong>, <strong>Roraima (11,56)</strong>,
+        <strong>Santa Catarina (11,21)</strong> e <strong>Tocantins (11,11)</strong>.
+      </p>
+
+      <canvas id="grafico-brasil"></canvas>
 
       <p class="fonte">
-        Fonte: World Health Organization. <em>World Health Statistics 2023</em>.<br>
-        Disponível em:
-        <a href="https://cdn.who.int/media/docs/default-source/gho-documents/world-health-statistic-reports/2023/world-health-statistics-2023_20230519_.pdf" target="_blank">
-          cdn.who.int
-        </a>
+        <strong>Fontes:</strong><br>
+        Organização Mundial da Saúde (2025). <em>Suicide Worldwide in 2021</em>.<br>
+        Ministério da Saúde (2024). <em>Boletim Epidemiológico – Panorama dos Suicídios e Lesões Autoprovocadas no Brasil</em>.
       </p>
     </section>
 
@@ -84,7 +109,7 @@
         <div class="card">
           <i class="fa-solid fa-hand-holding-heart"></i>
           <h3>Escute com empatia</h3>
-          <p>Ouvir sem julgar é um passo essencial para ajudar alguém em sofrimento.</p>
+          <p>Ouvir sem julgamento é um passo essencial para ajudar alguém em sofrimento.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-user-md"></i>
@@ -97,6 +122,22 @@
           <p>O CVV oferece escuta gratuita, sigilosa e 24 horas por dia.</p>
         </div>
       </div>
+    </section>
+
+    <!-- Metas Globais -->
+    <section id="metas" class="info">
+      <h2>Metas Globais e Ações da OMS</h2>
+      <p>
+        A Organização Mundial da Saúde tem como meta reduzir em <strong>um terço as mortes por suicídio até 2030</strong>,
+        conforme o <em>Objetivo de Desenvolvimento Sustentável 3.4.2</em>. 
+        Para alcançar essa meta, a OMS propõe quatro pilares principais da iniciativa <strong>LIVE LIFE</strong>:
+      </p>
+      <ul class="lista-sinais">
+        <li><i class="fa-solid fa-ban"></i> Limitar o acesso a meios letais (armas, pesticidas, locais de risco).</li>
+        <li><i class="fa-solid fa-newspaper"></i> Promover comunicação responsável na mídia.</li>
+        <li><i class="fa-solid fa-children"></i> Desenvolver habilidades socioemocionais entre jovens.</li>
+        <li><i class="fa-solid fa-hands-holding"></i> Identificar e acompanhar pessoas em risco.</li>
+      </ul>
     </section>
 
     <!-- Campanhas -->
@@ -127,25 +168,11 @@
         <input type="email" name="email" placeholder="Seu e-mail" required>
         <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
 
-        <!-- Segurança e personalização -->
         <input type="hidden" name="_next" value="https://ujullyaa.github.io/site-governo-suicidio/obrigado.html">
         <input type="hidden" name="_captcha" value="false">
 
         <button type="submit">Enviar</button>
       </form>
-    </section>
-
-    <!-- Referências -->
-    <section id="referencias" class="referencias">
-      <h2>Referências</h2>
-      <ul>
-        <li>World Health Organization (2023). <em>World Health Statistics Report 2023</em>. 
-          <a href="https://cdn.who.int/media/docs/default-source/gho-documents/world-health-statistic-reports/2023/world-health-statistics-2023_20230519_.pdf" target="_blank">WHO Report</a></li>
-        <li>World Health Organization (2021). <em>Suicide Worldwide in 2019: Global Health Estimates</em>. 
-          <a href="https://www.who.int/publications/i/item/9789240026643" target="_blank">who.int</a></li>
-        <li>Pan American Health Organization (PAHO). <em>One in 100 deaths is by suicide</em>. 
-          <a href="https://www.paho.org/en/one-100-deaths-suicide" target="_blank">paho.org</a></li>
-      </ul>
     </section>
   </main>
 
