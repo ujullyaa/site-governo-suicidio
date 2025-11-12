@@ -1,13 +1,8 @@
-// ==========================
-// MENU RESPONSIVO
-// ==========================
+
 const menuBtn = document.getElementById("menu-btn");
 const nav = document.getElementById("menu");
 menuBtn.addEventListener("click", () => nav.classList.toggle("ativo"));
 
-// ==========================
-// MODO ESCURO (salva preferência)
-// ==========================
 const modoEscuroBtn = document.getElementById("modo-escuro-btn");
 if (localStorage.getItem("modo-escuro") === "true") document.body.classList.add("modo-escuro");
 modoEscuroBtn.addEventListener("click", () => {
@@ -15,11 +10,6 @@ modoEscuroBtn.addEventListener("click", () => {
   localStorage.setItem("modo-escuro", document.body.classList.contains("modo-escuro"));
 });
 
-// ==========================
-// GRÁFICOS (Chart.js)
-// ==========================
-
-// 1️⃣ Evolução global (2000–2021)
 const ctx1 = document.getElementById("grafico-suicidio");
 if (ctx1) {
   new Chart(ctx1, {
@@ -44,7 +34,6 @@ if (ctx1) {
   });
 }
 
-// 2️⃣ Comparativo entre regiões (2021)
 const ctx2 = document.getElementById("grafico-regioes");
 if (ctx2) {
   new Chart(ctx2, {
@@ -65,7 +54,6 @@ if (ctx2) {
   });
 }
 
-// 3️⃣ Comparativo por gênero (2021)
 const ctx3 = document.getElementById("grafico-genero");
 if (ctx3) {
   new Chart(ctx3, {
@@ -87,7 +75,6 @@ if (ctx3) {
   });
 }
 
-// 4️⃣ Gráfico do Brasil (2021)
 const ctxBrasil = document.getElementById("grafico-brasil");
 if (ctxBrasil) {
   new Chart(ctxBrasil, {
